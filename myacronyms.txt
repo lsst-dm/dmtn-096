@@ -1,0 +1,4 @@
+GB:GigaByte 
+PB:PetaByte
+TB:TeraByte
+POC:Proof Of Concept
