@@ -2,7 +2,7 @@
 #
 
 SRC=DMTN-*.tex
-tex=$(SRC) body.tex   
+tex=$(SRC) body.tex dm*tex reqs.tex
 
 OBJ=$(SRC:.tex=.pdf)
 
