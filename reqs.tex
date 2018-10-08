@@ -5,20 +5,27 @@ The labels used here are from that document and are the requirements affected by
 
 \textbf{Note:} There are no SUI/Firefly needs for commissioning.
 \begin{itemize}
-\item DMS-LSP-REQ-0008, DMS-PRTL-REQ-0004 Semantic linkage - logical links between data shown in portal (ok)
+\item DMS-LSP-REQ-0008, DMS-PRTL-REQ-0004 Semantic linkage - logical links between data shown in portal
 \begin{itemize}
 \item Have an implementation this but it is going to have to evolve with the data
 \item More work for science users if we do not expend further effort on it
 \end{itemize}
 
-\item DMS-LSP-REQ-0010 Transfer between portal and notebook (ok)
-\item User Storage - implication of UI for DMS-LSP-REQ-0011 to 18 - some of this is done.
+\item DMS-LSP-REQ-0010 Transfer between portal and notebook
+\begin{itemize}
+\item We have a current implementation of this - it could be improved.
+\end{itemize}
+\item User Storage - implication of UI for DMS-LSP-REQ-0011 to 18
+\begin{itemize}
+\item some of this is done.
+\item the actual storage implementation is in DAX this is the interface for the user
+\end{itemize}
 \item Portal aspect
 \begin{itemize}
-\item DMS-PRTL-REQ-0001 Browser access (ok)
-\item DMS-PRTL-REQ-0002 Discovery (ok)
-\item DMS-PRTL-REQ-0005,6 Calibration and Coadd and Single Epoch access (ok)
-\item DMS-PRTL-REQ-0007 access to other VO services (On the list of things to do in ramp down)
+\item DMS-PRTL-REQ-0001 Browser access  - we have an implementation
+\item DMS-PRTL-REQ-0002 Discovery  - we have an implementation
+\item DMS-PRTL-REQ-0005,6 Calibration and Coadd and Single Epoch access  - we have an implementation
+\item DMS-PRTL-REQ-0007 access to other VO services - On the list of things to do in ramp down
 \end{itemize}
 
 \item Query support
@@ -29,7 +36,10 @@ The labels used here are from that document and are the requirements affected by
 \item Other possibilities than bespoke development exist
 \item EPO will have to do many of these as well
 \end{itemize}
-\item DMS-PRTL-REQ-0040 to 46 - visualize based in images meta data (ok)
+\item DMS-PRTL-REQ-0040 to 46 - visualize based in images meta data
+\begin{itemize}
+\item  We have an implementation - there are also other tools
+\end{itemize}
 \end{itemize}
 
 
@@ -45,16 +55,18 @@ The labels used here are from that document and are the requirements affected by
 \item Arguably we should \emph{not} provide this in the Portal: notebooks and other tools are more appropriate for this.
 \item We should look more critically at requirements like this.
 \end{itemize}
-\item DMS-PRTL-REQ-0075 to 77 - image overlay and color adjustment (ok)
+\item DMS-PRTL-REQ-0075 to 77 - image overlay and color adjustment
 \begin{itemize}
+\item This is possible in firefly now
 \item Need in Portal questionable; most scientists will use their own tools.
 \item There are other tools that do this like Visiomatic.
 \end{itemize}
 
 
-\item All Sky  DMS-PRTL-REQ-0078 to 88 (ok)
+\item All Sky  DMS-PRTL-REQ-0078 to 88
 \begin{itemize}
-\item There are also other tools (Aladin Lite) - may not be as nicely integrated
+\item The bigger job is to make the HiPS maps in  processing which is not part of the portal.
+\item There are also other tools (Aladin Lite) which can zoom using HiPS - may not be as nicely integrated
 \end{itemize}
 
 \end{itemize}
@@ -62,7 +74,7 @@ The labels used here are from that document and are the requirements affected by
 \item Exploration and Analysis DMS-PRTL-REQ-0089 to 108
 \begin{itemize}
 \item Many nice to have things like table filtering, selection from plots, linked plots
-\item Again questionable whther we \emph{need} this in the Portal and there are other tools.
+\item Again questionable whether we \emph{need} this in the Portal and there are other tools.
 \end{itemize}
 
 \item Control and Management DMS-PRTL-REQ-0115 to 118 (some of this is implemented)
@@ -73,12 +85,14 @@ The labels used here are from that document and are the requirements affected by
 \begin{itemize}
 \item This is not done - mainly since the alert mini broker is not done
 \item Worst case the simple interface coming with the mini broker is used and not well integrated.
+\item AP could see that as a slight upscope
 \end{itemize}
 
 \item Documentation DMS-PRTL-REQ-0122 to 24
 \begin{itemize}
-\item  Can claim this with \url{www.lsst.io}
+\item  We have a documentation system \url{www.lsst.io}
 \item This may not perhaps be  as tightly integrated as may be liked.
+\item This may be seen as a small upscope for SQuaRE
 \end{itemize}
 \end{itemize}
 
