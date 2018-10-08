@@ -1,19 +1,21 @@
 \section { Overview of requirements affected by DM-10}\label{sect:reqs}
-\citeds{LDM-554} enumerates science platform requirements the labels used here are from that document and are the requirements affected by the scope option.
-\citeds{DMTR-52} is a test report on the platform.
+\citeds{LDM-554} enumerates Science Platform requirements.
+The labels used here are from that document and are the requirements affected by the scope option.
+\citeds{DMTR-52} is a test report on the Science Platform.
 
- {\bf Note:} There are no SUI/Firefly needs for commissioning.
+\textbf{Note:} There are no SUI/Firefly needs for commissioning.
 \begin{itemize}
-\item  DMS-LSP-REQ-0008, DMS-PRTL-REQ-0004 Semantic linkage - logical links between data shown in portal (ok)
+\item DMS-LSP-REQ-0008, DMS-PRTL-REQ-0004 Semantic linkage - logical links between data shown in portal (ok)
 \begin{itemize}
-\item Have this but its going to have to evolve with the data .. more work for users if we do not do it
+\item Have an implementation this but it is going to have to evolve with the data
+\item More work for science users if we do not expend further effort on it
 \end{itemize}
 
-\item  DMS-LSP-REQ-0010 Transfer between portal and notebook (ok)
-\item  User Storage - implication of UI for DMS-LSP-REQ-0011 to 18 - some of this is done.
-\item  Portal aspect
+\item DMS-LSP-REQ-0010 Transfer between portal and notebook (ok)
+\item User Storage - implication of UI for DMS-LSP-REQ-0011 to 18 - some of this is done.
+\item Portal aspect
 \begin{itemize}
-\item  DMS-PRTL-REQ-0001 Browser access (ok)
+\item DMS-PRTL-REQ-0001 Browser access (ok)
 \item DMS-PRTL-REQ-0002 Discovery (ok)
 \item DMS-PRTL-REQ-0005,6 Calibration and Coadd and Single Epoch access (ok)
 \item DMS-PRTL-REQ-0007 access to other VO services (On the list of things to do in ramp down)
@@ -21,10 +23,11 @@
 
 \item Query support
 \begin{itemize}
-\item  DMS-PRTL-REQ-0009 to 38, Async Queries, Spatial, Id etc.
+\item DMS-PRTL-REQ-0009 to 38, Async Queries, Spatial, Id etc.
 \begin{itemize}
-\item Mainly backend but need some interface - some done
-\item other possibilities exist, EPO will have to do many of these as well
+\item Mainly backend work (i.e. will be addressed by effort in 02C.06) but need some need for supporting interfaces; some of these are available
+\item Other possibilities than bespoke development exist
+\item EPO will have to do many of these as well
 \end{itemize}
 \item DMS-PRTL-REQ-0040 to 46 - visualize based in images meta data (ok)
 \end{itemize}
@@ -34,42 +37,42 @@
 \begin{itemize}
 \item DMS-PRTL-REQ-0048 to 54 - showing alerts and tabular data
 \begin{itemize}
-\item mostly done - also others tools exist (e.g. Topcat)
+\item Mostly done
+\item Other tools exist to address these requirements (e.g. Topcat)
 \end{itemize}
 \item DMS-PRTL-REQ-0055 to 74 - Graphing, scatter plots, histograms, uncertainties etc ..
 \begin{itemize}
-\item Arguably we {\em should NOT } provide this in the portal
-\item notebooks and other tools are already better for this.
-\item We should look  more critically at requirements like this.
+\item Arguably we should \emph{not} provide this in the Portal: notebooks and other tools are more appropriate for this.
+\item We should look more critically at requirements like this.
 \end{itemize}
 \item DMS-PRTL-REQ-0075 to 77 - image overlay and color adjustment (ok)
 \begin{itemize}
-\item  Need in portal questionable  (most scientists will use their own tools )
+\item Need in Portal questionable; most scientists will use their own tools.
 \item There are other tools that do this like Visiomatic.
 \end{itemize}
 
 
 \item All Sky  DMS-PRTL-REQ-0078 to 88 (ok)
 \begin{itemize}
-\item  There are also other tools (Aladin lite) - may not be as nicely integrated
+\item There are also other tools (Aladin Lite) - may not be as nicely integrated
 \end{itemize}
 
 \end{itemize}
 
 \item Exploration and Analysis DMS-PRTL-REQ-0089 to 108
 \begin{itemize}
-\item  Many nice to have things like table filtering, selection from plots, linked plots
-\item Again questionable we {\em need} this in the portal and there are other tools.
+\item Many nice to have things like table filtering, selection from plots, linked plots
+\item Again questionable whther we \emph{need} this in the Portal and there are other tools.
 \end{itemize}
 
 \item Control and Management DMS-PRTL-REQ-0115 to 118 (some of this is implemented)
 \begin{itemize}
-\item  Preferences, API , quotas ..
+\item Preferences, API, quotas...
 \end{itemize}
 \item Alert support DMS-PRTL-REQ-0119 to 21,27
 \begin{itemize}
 \item This is not done - mainly since the alert mini broker is not done
-\item Worst case the simple interface coming with the mini broker is used  and not well integrated.
+\item Worst case the simple interface coming with the mini broker is used and not well integrated.
 \end{itemize}
 
 \item Documentation DMS-PRTL-REQ-0122 to 24
