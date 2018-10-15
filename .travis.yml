@@ -11,7 +11,7 @@ script:
   # Compile PDF using containerized lsst-texmf
   - "docker run --rm -v `pwd`:/workspace -w /workspace lsstsqre/lsst-texmf:latest sh -c 'make'"
   # Deploy website. See https://github.com/lsst-sqre/lander for CLI options
-  - "lander --pdf dmtn-096.pdf --upload --lsstdoc dmtn-096.tex --env=travis --ltd-product dmtn-096"
+  - "lander --pdf DMTN-096.pdf --upload --lsstdoc DMTN-096.tex --env=travis --ltd-product dmtn-096"
 env:
   global:
     # Add LSST the Docs credentials
