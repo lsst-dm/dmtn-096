@@ -2,7 +2,8 @@
 #
 
 SRC=DMTN-*.tex
-tex=$(SRC) body.tex dm*tex reqs.tex
+tex=$(filter-out $(wildcard *acronyms.tex) , $(wildcard *.tex))  
+
 
 OBJ=$(SRC:.tex=.pdf)
 
