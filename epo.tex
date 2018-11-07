@@ -1,0 +1,65 @@
+
+\subsection{EPO Skyviewer} \label{sect:epo}
+
+
+
+The EPO equivalent of the DM Portal is called the Skyviewer. All EPO requirements including Skyviewer,  are listed in \citeds{LSE-89} which will be updated in the coming months. A few relevant requirements, particularly for Skyviewer, are listed  below
+  as well as  more descriptive text based on the results of our market research, conducted during 2017 and early 2018.
+
+The current EPO Skyviewer Design is on confluence \url{ https://confluence.lsstcorp.org/x/kYGuBQ}.
+
+The Skyviewer is intended for a general, non-specialist audience. Providing context for the data displayed through the Skyviewer enables meaningful and engaging user experiences and is part of the mission of EPO.  The Skyviewer will display color images of the LSST sky and allow users to pan and zoom, and access additional information for individual objects. The Skyviewer will allow for guided or freeform exploration and will connect users to other features of the website that encourage deeper engagement, like citizen science projects, articles, or interactive notebooks (either html or Jupyter).
+
+\subsubsection {Requirements on Skyviewer}
+
+
+\begin{itemize}
+\item EPO-REQ-0191: The Skyviewer image tiles shall be in color.
+
+\item EPO-REQ-0192: The Skyviewer will be mobile-friendly.\\
+    {\em This is an important distinction between the DM Portal and the EPO Skyviewer.}  DM users will be happy with this but of course it may limit some functionality on the full screen version.
+
+\item EPO-REQ-0193-197 are about navigation - pan and zoom with keyboard, touchpad, mouse
+
+\item EPO-REQ-0197-198
+Can select single object. Selection of single object presents {\em Object Page} with more info (EPO-REQ-0199) such as:
+\begin{itemize}
+\item  an object ID (EPO-REQ-0200),
+\item  coordinates (EPO-REQ-0131),
+\item  small image cutout (EPO-REQ-0201),
+\item  an animated sequence of images if they exist (EPO-REQ-0159),
+\item  alert stream data, if they exist (EPO-REQ-0202),
+\item  light curve data, if they exist (EPO-REQ-0203),
+\item  link to other VO info ( EPO-REQ-0204, EPO-REQ-0205)
+\item  definitions for unfamiliar terms
+\end{itemize}
+
+\item EPO-REQ-0156: EPO will present to users a list of curated objects to explore.
+
+\begin{itemize}
+\item  Listicles like “10 Beautiful Galaxies” or “Near Earth Objects” appeal to a non-scientist audience and provide context around the common “what now?” question.
+\item  EPO audiences are interested in search capabilities but will not know coordinates or specifics for queries.  Instead, they will want a familiar “google-like” search bar to find the “faintest star seen” or “most distant galaxy”, for example.
+\item  Automatically highlighting interesting objects that are in the view of the user at any given time by circling them, displaying thumbnail images of these objects in a side panel, and providing further information (i.e. object pages with light curves, comparisons to similar objects). This type of UI design is more similar to World Wide Telescope than other existing options EPO has so far investigated (more on this below).
+\item  many of these features may require back end work similar to DMS-PRTL-REQ-0009 to 38, Async Queries, Spatial, Id etc.
+\end{itemize}
+
+\end{itemize}
+All of these are compatible with the DM requirements, relevant DM requirements are in \appref{sect:reqs}.
+\subsubsection{ Requirements related to Alerts}
+
+\begin{itemize}
+\item EPO-REQ-0157: Graphic overlay of the Alert Stream wall be presented
+
+\item EPO-REQ-0158: Filtering options will allow users to select different alert data criteria to adjust their graphic overlay
+\end{itemize}
+
+This functionality was not required in  DM - we do have requirements for alert filter selection not covered in EPO.
+
+\subsubsection{Other considerations}
+Embedding the Skyviewer inside other web pages such as articles or as a supplement to press releases is a nice-to-have feature not currently described in the requirements.
+
+There are currently no EPO requirements related to transferring between the Skyviewer and notebooks, or even selecting more than a single object (ie. nothing similar to DMS-LSP-REQ-0010: Transfer between portal and notebook.)
+
+\subsubsection{Existing Technologies}
+
+EPO has investigated existing technologies that could power the Skyviewer, including Aladdin lite, World Wide Telescope (WWT), and Google Sky. While WWT aligns most closely with the user interface design, no commitment has been made and EPO intends to revisit the topic when development is scheduled to begin in FY20 (this timing will be reflected in the upcoming EPO baseline update, planned to be in place by Feb 2019). We believe DM should be involved in this process to see how much we can work together to a single portal even  if that is deployed in multiple locations with different data sets. .
